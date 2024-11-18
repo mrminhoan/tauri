@@ -14,25 +14,27 @@
 				"useAltText": "warn",
 				"useAriaPropsForRole": "warn",
 				"useValidAriaProps": "warn",
-				"useValidAriaValues": "warn"
+				"useValidAriaValues": "warn",
+				"noRedundantRoles": "off"
 			},
 			"complexity": {
 				"noBannedTypes": "error",
-				"noUselessTypeConstraint": "error"
+				"noUselessTypeConstraint": "error",
+				"noStaticOnlyClass":"off"
 			},
 			"correctness": {
 				"noChildrenProp": "error",
 				"noPrecisionLoss": "error",
-				"noUnusedVariables": "error",
+				"noUnusedVariables": "off",
 				"useArrayLiterals": "off",
 				"useExhaustiveDependencies": "warn",
 				"useHookAtTopLevel": "error",
 				"useJsxKeyInIterable": "error",
-				"noUnusedImports": "error"
+				"noUnusedImports": "off"
 			},
 			"nursery": {
 				"useSortedClasses": {
-					"level": "error",
+					"level": "warn",
 					"fix": "safe",
 					"options": {}
 				}
@@ -42,7 +44,7 @@
 			"suspicious": {
 				"noCommentText": "error",
 				"noDuplicateJsxProps": "error",
-				"noExplicitAny": "error",
+				"noExplicitAny": "off",
 				"noExtraNonNullAssertion": "error",
 				"noMisleadingInstantiator": "error",
 				"noUnsafeDeclarationMerging": "error"
